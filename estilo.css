@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: "Open Sans";
+    }
+
+
+        /* Estilo del logo */
+        img.logo {
+            width: 200px; /* ancho de logo */
+            height: auto;
+        }
+
+        /*  navegación */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        .menu-horizontal {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        .menu-horizontal li {
+            position: relative;
+            margin-right: 20px;
+        }
+        
+        .menu-horizontal >li > a{
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            }
+
+        .menu-vertical {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 200px;
+            background-color: rgba(0, 0, 0, .5);
+            border: 1px solid #ddd;
+        }
+        
+        .menu-vertical li a{
+            display: block;
+            color: white;
+            padding: 15px 15px 15px 20px ;
+            text-decoration: none;
+        }
+        
+
+        .menu-horizontal >li:hover{
+            background-color: red;
+        }
+
+        .menu-horizontal li:hover .menu-vertical {
+            display: block;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .menu-horizontal {
+                flex-direction: column;
+            }
+        
+            .menu-horizontal li {
+                margin-right: 0;
+            }
+        
+            .menu-toggle {
+                display: block;
+            }
+        
+            .menu-horizontal li:hover .menu-vertical {
+                display: none;
+            }
+        }
+        
+
+        .contenedor-productos {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .producto {
+            width: 300px; /* Ancho de cada producto */
+            margin: 10px; /* Margen entre productos */
+        }
+
+        .producto img {
+            width: 100%; 
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        body{
+            background-color: white;
+        }
+
+
